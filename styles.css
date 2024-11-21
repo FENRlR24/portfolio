@@ -1,0 +1,130 @@
+/* Основной фон и текст */
+body {
+  background-color: #ece7df;
+  color: #333333;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+/* Левый верхний угол с именем */
+header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #333333;
+}
+
+.position {
+  font-size: 1.5em;
+  color: #555555;
+  margin-top: 10px;
+}
+
+/* Левое боковое меню */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 250px; /* Опускаем боковую панель с кнопками ниже */
+  margin-left: 20px;
+}
+
+.sidebar button {
+  background-color: #8c634f;
+  color: #ece7df;
+  border: 2px solid #8c634f;
+  padding: 15px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 10px 0;
+  width: 160px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.sidebar button:hover {
+  background-color: #ece7df;
+  color: #8c634f;
+}
+
+/* Ссылки без подчеркивания */
+a.no-underline {
+  text-decoration: none;
+  color: #8c634f;
+}
+
+a.no-underline:hover {
+  text-decoration: underline;
+}
+
+/* Центрирование основного контента */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 250px;
+  padding: 20px;
+}
+
+/* Текст "Meine Vision..." */
+.vision-text {
+  position: absolute;
+  font-size: 2em;
+  font-weight: bold;
+  color: #555555;
+  
+  top: 5%;
+  left: calc(250px + 20px);
+  max-width: 30rem;
+  z-index: 1000;
+}
+/* Контентные секции */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 600px;
+  margin-top: 20px; /* Отступ для контентных секций */
+}
+
+.content-section {
+  display: none;
+  background-color: #ffffff;
+  color: #333333;
+  padding: 25px;
+  border-radius: 8px;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Список без точек */
+.skills-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Фото справа с фиксированным размером */
+.photo-container {
+  position: absolute;
+  top: 0;
+  right: 30px;
+}
+
+.profile-photo {
+  width: 650px;
+  height: 500px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+section {
+  position: relative;
+
+}
